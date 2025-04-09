@@ -1,5 +1,5 @@
 import { CanDeactivateFn } from '@angular/router';
-import { EditpriceComponent } from './editprice/editprice.component';
+import { EditpriceComponent } from './routing/editprice/editprice.component';
 
 export const changesGuard: CanDeactivateFn<EditpriceComponent> = (component) => {
   // return !component.dirty ? true:confirm('changes will be lost.Are you sure');

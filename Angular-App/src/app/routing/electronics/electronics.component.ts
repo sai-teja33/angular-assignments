@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink, RouterOutlet } from '@angular/router';
-import { DataService } from '../data.service';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-electronics',
