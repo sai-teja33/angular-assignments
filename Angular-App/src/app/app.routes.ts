@@ -12,59 +12,74 @@ import { LatestComponent } from './routing/latest/latest.component';
 import { LoginComponent } from './routing/login/login.component';
 import { EletroniccardComponent } from './routing/eletroniccard/eletroniccard.component';
 import { ElectronicsComponent } from './routing/electronics/electronics.component';
+
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { PipeComponent } from './pipe/pipe.component';
 import { HomeComponent } from './routing/home/home.component';
+
+
 
 export const routes: Routes = [
     {
-        path:"apis",
-        component:ApicallsComponent
-    },{
-        path:"userprofile",
-        component:UserProfileComponent
-    },{
-        path:"parent",
-        component:ParentComponent
+        path: "apis",
+        component: ApicallsComponent
+    },
+    {
+        path: "pipes",
+        component: PipeComponent
+
+    },
+    {
+        path: "directives",
+        component: StructuralDirectivesComponent
+    },
+    {
+        path: "userprofile",
+        component: UserProfileComponent
     }, {
-        path:"template",
-        component:TemplateformsComponent
+        path: "parent",
+        component: ParentComponent
+    }, {
+        path: "template",
+        component: TemplateformsComponent
     },
     {
-        path:"reactive",
-        component:ReactiveformsComponent
+        path: "reactive",
+        component: ReactiveformsComponent
     },
     {
-        path:"formarray",
-        component:ReactiveComponent
-    }, 
-    
+        path: "formarray",
+        component: ReactiveComponent
+    },
+
     // 
-    
+
     {
-        path:'routing',
-        component:HomeComponent
+        path: 'routing',
+        component: HomeComponent
     },
     {
-        path:'electronics',
-        component:ElectronicsComponent,
-    },  
-        
+        path: 'electronics',
+        component: ElectronicsComponent,
+    },
+
     {
-        path:'electroniccard/:id',
-        component:EletroniccardComponent,
+        path: 'electroniccard/:id',
+        component: EletroniccardComponent,
     },
     {
-        path:'login',
-        component:LoginComponent
+        path: 'login',
+        component: LoginComponent
     },
-   
+
     {
-        path:'latest',
-        component:LatestComponent,
-        canActivate:[loginguardGuard],
+        path: 'latest',
+        component: LatestComponent,
+        canActivate: [loginguardGuard],
     },
     {
-        path:'editprice',
-        component:EditpriceComponent,
-        canDeactivate:[changesGuard]
+        path: 'editprice',
+        component: EditpriceComponent,
+        canDeactivate: [changesGuard]
     }
 ];
